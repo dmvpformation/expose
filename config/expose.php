@@ -83,7 +83,7 @@ return [
     | > expose default-domain YOUR-CUSTOM-WHITELABEL-DOMAIN
     |
     */
-    'default_domain' => null,
+    'default_domain' => 'expose.dmvp.it',
 
     /*
     |--------------------------------------------------------------------------
@@ -173,7 +173,7 @@ return [
         'size' => '1MB',
     ],
 
-    'platform_url' => 'https://expose.dev',
+    'platform_url' => 'https://expose.dmvp.it',
 
     /*
     |--------------------------------------------------------------------------
