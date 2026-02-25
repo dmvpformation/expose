@@ -23,3 +23,6 @@ services:
       - nginx-config:/etc/nginx
       - nginx-html:/usr/share/nginx/html
       - "../files/expose.dmvp.it.conf:/etc/nginx/conf.d/expose.dmvp.it.conf"
+volumes:
+  nginx-config: {}
+  nginx-html: {}
