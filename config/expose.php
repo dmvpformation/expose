@@ -14,7 +14,7 @@ return [
     */
     'servers' => [
         'main' => [
-            'host' => 'sharedwithexpose.com',
+            'host' => 'expose.dmvp.it',
             'port' => 443,
         ],
     ],
@@ -32,7 +32,7 @@ return [
     | if available.
     |
     */
-    'server_endpoint' => 'https://expose.dev/api/servers',
+    'server_endpoint' => 'https://expose.dmvp.it/api/servers',
 
     /*
     |--------------------------------------------------------------------------
@@ -55,7 +55,7 @@ return [
     | `true` to fall-back to the system default DNS servers.
     |
     */
-    'dns' => '127.0.0.1',
+    'dns' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -107,7 +107,7 @@ return [
     | automatically. Otherwise you can specify it here manually.
     |
     */
-    'default_https' => false,
+    'default_https' => true,
 
     /*
     |--------------------------------------------------------------------------
