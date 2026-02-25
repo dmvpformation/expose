@@ -14,6 +14,7 @@ services:
     restart: always
     volumes:
       - ./database/expose.db:/root/.expose
+      - "../files/expose.php:/src/config/expose.php"
   nginx:
     image: nginx:latest
     restart: unless-stopped
