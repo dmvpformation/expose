@@ -11,12 +11,6 @@ services:
       domain: ${DOMAIN}
       username: ${ADMIN_USERNAME}
       password: ${ADMIN_PASSWORD}
-    networks:
-      - expose-nginx-kjm1ie
     restart: always
     volumes:
       - ./database/expose.db:/root/.expose
-networks:
-  expose-nginx-kjm1ie:
-    name: expose-nginx-kjm1ie
-    external: true
