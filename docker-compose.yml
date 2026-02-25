@@ -14,3 +14,12 @@ services:
     restart: always
     volumes:
       - ./database/expose.db:/root/.expose
+  nginx:
+      image: nginx:latest
+      restart: unless-stopped
+      ports:
+        - 80
+      volumes:
+        - nginx-config:/etc/nginx
+        - nginx-html:/usr/share/nginx/html
+        - "../files/expose.dmvp.it.conf:/etc/nginx/conf.d/expose.dmvp.it.conf"
